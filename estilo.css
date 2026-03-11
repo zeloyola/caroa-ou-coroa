@@ -1,10 +1,50 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
 
-
-#conteudo{
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.hide{
+body {
+    background-color: #5483B3;
+}
+
+h1 {
+    font-family: Eagle Lake;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+
+#conteudo {
+    background-color: #7DA0CA;
+    height: auto;
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.225);
+    border-radius: 8px;
+}
+
+#visor {
+    font-family: Eagle Lake;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    padding: 15px;
+    margin: 10px;
+}
+
+.hide {
     display: none;
 }

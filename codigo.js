@@ -5,6 +5,7 @@ const buttonResetar = document.querySelector('#reset')
 buttonSortear.addEventListener("click", sortear)
 buttonResetar.addEventListener("click", reset)
 
+
 function sortear() {
 
     const R = Math.random()
@@ -15,13 +16,22 @@ function sortear() {
     img.setAttribute('id', 'foto')
     if (resultado == 'Cara') {
         img.setAttribute('src', 'imagens/gato-cara.png')
+    } else{
+        img.setAttribute('src', 'imagens/gato-coroa.png')
     }
-    console.log(img)
+   
 
     visor.innerHTML = resultado
+    visor.appendChild(img)
+    rolarSom()
     buttonSortear.classList.add('hide')
     buttonResetar.classList.remove('hide')
 
+}
+
+function rolarSom(){
+    const audio = document.querySelector('#efeitoSonoro')
+    audio.play()
 }
 
 

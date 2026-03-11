@@ -6,28 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo Cara ou Coroa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
 
 </head>
 
 <body>
-    <div id="todos">
-        <header>
-            <h1>
-                Jogo do Cara ou Coroa
-            </h1>
-        </header>
-        <section>
-            <div id="visor">
 
-                Escolha suas opções... (Cara ou Coroa)
+    <header>
+        <h1>
+            Jogo do Cara ou Coroa
+        </h1>
+    </header>
+    <section id="conteudo">
+        <div id="visor">
 
-            </div>
-            <button id="sortear" class="btn  btn-success">Clique para iniciar!</button>
-            <button id="reset" type="button" class="btn btn-danger hide">Resetar</button>
-        </section>
-    </div>
+            Escolha suas opções... (Cara ou Coroa)
+
+        </div>
+        <button id="sortear" class="btn  btn-success">Clique para iniciar!</button>
+        <button id="reset" type="button" class="btn btn-danger hide">Resetar</button>
+        <audio src="imagens/peekaboolabcreative-11l-victory_sound_with_t-1749487409696-357609.mp3"
+            id="efeitoSonoro"></audio>
+    </section>
 
     <script src="codigo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
